@@ -1,0 +1,19 @@
+import style from "./Offers.module.css";
+import exclusive_imgage from "../Assets/exclusive_image.png";
+const Offers = () => {
+    return (
+        <div className={style.offers}>
+            <div className={style["offers-left"]}>
+             <h1>Exclusive</h1>
+             <h1>Offers For You</h1>
+             <p>ONLY ON BEST SELLERS PRODUCTS</p>
+             <button>Check Now</button>
+            </div>
+            <div className={style["offers-right"]}>
+             <img src={exclusive_imgage} alt="img" />
+            </div>
+        </div>
+    )
+}
+
+export default Offers;
