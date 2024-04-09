@@ -3,7 +3,7 @@ import style from "./Item.module.css";
 const Item = (props) => {
     return (
         <div className={style.item}>
-           <Link to={`/product/ ${props.id}`}><img src={props.image} alt="img" /></Link> 
+            <Link to={`/product/ ${props.id}`}><img onClick={window.scrollTo(0, 0)} src={props.image} alt="img" /></Link>
             <p>{props.name}</p>
             <div className={style["item-prices"]}>
                 <div className={style["item-price-new"]}>
